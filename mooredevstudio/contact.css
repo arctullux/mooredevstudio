@@ -1,0 +1,134 @@
+q
+
+:root {
+  --bg-color: #cfecf7;
+  --bg-secondary: #f8fafc;
+  --text-color: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --primary-color: #1aff00;
+  --primary-hover: #2563eb;
+  --primary-text: #ffffff;
+  --widget-bg-color: #EAFCFFFF;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --header-height: 70px;
+  --transition-speed: 0.3s;
+  --home_bg_image: url("images/sample_banner.png");
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+
+.content {
+  margin-top: var(--header-height);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#banner {
+  height: 20vh;
+  background-image: var(--home_bg_image);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 5%;
+}
+
+#contact_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.field {
+  width: 300px;
+  height: 45px;
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#inquiry {
+  height: 250px;
+  width: 300px;
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#submit_btn {
+  width: 100px;
+  height: 45px;
+  margin-top: 5%;
+  background-color: #7ec6e5;
+  border: none;
+  border-radius: 10px;
+  transform: scale(1.2);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s ease-in;
+}
+
+#submit_btn:hover {
+  background-color: #629aaf;
+
+}
+
+#submit_btn:active {
+  transform: scale(1);
+}
+
+#form_label {
+  margin-top: 2%;
+}
+
+
+@media (orientation: landscape) {
+
+  #banner {
+    height: min-content;
+  }
+
+}
+@media (min-width: 769px) {
+
+  hr {
+    width: 90vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  #banner {
+    height: 15vh;
+    padding-top: 2%;
+  }
+
+  .panel {
+    margin: 2%;
+  }
+
+  #form_label {
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+  }
+
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+  }
+}
